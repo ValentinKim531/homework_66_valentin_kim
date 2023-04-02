@@ -1,12 +1,29 @@
 // task_1
 
-const makeElement = (string) =>{
+const makeString = (string) => {
     return console.log(document.getElementById(string).innerText)
 }
 
-makeElement('string-3')
-makeElement('string-5')
-makeElement('string-2')
-makeElement('string-6')
-makeElement('string-4')
-makeElement('string-1')
+makeString('string-3')
+makeString('string-5')
+makeString('string-2')
+makeString('string-6')
+makeString('string-4')
+makeString('string-1')
+
+
+// task_2
+
+const makeColor = (elementNumber, elementColor) => {
+    let a = document.getElementsByClassName('element')
+    return a[elementNumber].style.color = elementColor
+}
+
+makeColor(0, 'red')
+makeColor(1, 'red')
+makeColor(2, 'red')
+makeColor(3, 'green')
+makeColor(4, 'green')
+makeColor(5, 'green')
+
+
